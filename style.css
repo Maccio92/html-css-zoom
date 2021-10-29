@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 :root{
     --green: #4ac800;
@@ -17,6 +18,16 @@ body{
     color: white;
     font-size: 100%;
 }
+p{
+    font-size: 0.8em;
+    color: white;
+    background-color: rgba(99, 99, 99, 0.5);
+    width: 36%;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0.3em;
+    left: 0;
+}
 header{
     width: 100%;
     background-color: transparent;
@@ -26,7 +37,8 @@ header{
     text-align: right;
 }
 main{
-    padding: 5em
+    padding: 5em;
+    overflow: auto;
 }
 .flex{
     display: flex;
@@ -34,7 +46,6 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    
 }
 .header-btn{
    padding: 0.2em 0.5em;
@@ -45,11 +56,21 @@ main{
 .header-btn a{
     color: white;
     text-decoration: none;
+  
 }
 .image{
     width: 270px;
     margin-bottom: 1em;
+    position: relative;
 }
 .image img{
     width: 100%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--grey);
 }
